@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef BITCOINEXCHANGE_HPP
+#define BITCOINEXCHANGE_HPP
 
 #include <iostream>
 #include <fstream>
@@ -34,3 +35,5 @@ public :
     bool loadDatabase(const std::string &filename);
     void processInput(const std::string &filename);
 } ;
+
+#endif

@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef RPN_HPP
+#define RPN_HPP
 
 #include <iostream>
 #include <sstream>
@@ -29,3 +30,5 @@ public :
 
     int compute(const std::string &expr);
 } ;
+
+#endif

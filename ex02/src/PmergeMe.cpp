@@ -39,9 +39,7 @@ int PmergeMe::_toInt(const std::string &arg) {
 }
 
 double PmergeMe::_now() {
-    timespec ts;
-    clock_gettime(CLOCK_MONOTONIC, &ts);
-    return ts.tv_sec * 1000000.0 + ts.tv_nsec / 1000.0;
+    return static_cast<double>(std::clock()) * 1000000.0 / CLOCKS_PER_SEC;
 }
 
 void PmergeMe::_sort(std::vector<int> &v) {
@@ -120,7 +118,7 @@ void PmergeMe::run(int ac, char **av) {
     std::cout << "After:";
     for (size_t i = 0; i < _vec.size(); ++i)
         std::cout << " " << _vec[i];
-    std::cout << std::endl << std::fixed << std::setprecision(5)
+    std::cout << std::endl << std::fixed << std::setprecision(0)
               << "Time to process a range of " << _vec.size()
               << " elements with std::vector : " << vecTime << " us" << std::endl
               << "Time to process a range of " << _deq.size()

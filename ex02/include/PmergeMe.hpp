@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef PMERGEME_HPP
+#define PMERGEME_HPP
 
 #include <iostream>
 #include <iomanip>
@@ -40,3 +41,5 @@ public :
 
     void run(int ac, char **av);
 } ;
+
+#endif
