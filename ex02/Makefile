@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/08/23 21:08:22 by abidaux           #+#    #+#              #
-#    Updated: 2026/08/25 11:47:09 by abidaux          ###   ########.fr        #
+#    Created: 2026/08/26 14:38:22 by abidaux           #+#    #+#              #
+#    Updated: 2026/08/28 17:52:44 by abidaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 # Project name
-NAME		= btc
+NAME		= PmergeMe
 
 # Folders
 SRC_DIR		= src
@@ -32,7 +32,7 @@ RESET		= \033[0m
 
 # Sources
 SRC_FILES	=	main.cpp \
-				BitcoinExchange.cpp
+				PmergeMe.cpp
 
 # Object files
 OBJ_FILES	= $(addprefix $(OBJ_DIR)/, $(SRC_FILES:.cpp=.o))
