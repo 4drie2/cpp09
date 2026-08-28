@@ -50,7 +50,7 @@ $(NAME): $(OBJ_FILES)
 		printf "$(GREEN)✓ $(NAME) ready!$(RESET)\n"
 
 # Compile .cpp to .o
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp | $(OBJ_DIR)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp $(wildcard $(INC_DIR)/*.hpp) | $(OBJ_DIR)
 	@printf "$(YELLOW)Compiling $<...$(RESET)\n"
 	@$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
 

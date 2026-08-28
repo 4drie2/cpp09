@@ -6,7 +6,7 @@
 /*   By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/26 15:07:33 by abidaux           #+#    #+#             */
-/*   Updated: 2026/08/28 17:48:12 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/08/28 23:23:06 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,7 +118,7 @@ void PmergeMe::run(int ac, char **av) {
     std::cout << "After:";
     for (size_t i = 0; i < _vec.size(); ++i)
         std::cout << " " << _vec[i];
-    std::cout << std::endl << std::fixed << std::setprecision(0)
+    std::cout << std::endl << std::fixed << std::setprecision(5)
               << "Time to process a range of " << _vec.size()
               << " elements with std::vector : " << vecTime << " us" << std::endl
               << "Time to process a range of " << _deq.size()
